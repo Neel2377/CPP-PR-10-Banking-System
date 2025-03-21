@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 class BankAccount
 {
 public:
@@ -140,9 +139,10 @@ int main()
         cout << "4. Withdraw Money" << endl;
         cout << "5. Calculate Interest" << endl;
         cout << "6. Exit" << endl;
-        cout << endl;
+        cout << "###########################################"<<endl;
         cout << "Enter your choice: ";
         cin >> choice;
+        cout << "###########################################"<<endl;
 
         switch (choice)
         {
@@ -153,7 +153,7 @@ int main()
             cout << "1. Savings Account" << endl;
             cout << "2. Checking Account" << endl;
             cout << "3. Fixed Deposit Account" << endl;
-            cout << endl;
+            cout << "###########################################"<<endl;
             cout << "Select Account Type: ";
             cin >> accountType;
 
@@ -179,6 +179,7 @@ int main()
             account->addAccountData();
             accounts.push_back(account);
             cout << "Account added successfully!" << endl;
+            cout << "###########################################"<<endl;
             break;
         }
         case 2:
@@ -195,6 +196,7 @@ int main()
                     break;
                 }
             }
+            cout << "###########################################"<<endl;
             break;
         }
         case 3:
@@ -214,6 +216,7 @@ int main()
                     break;
                 }
             }
+            cout << "###########################################"<<endl;
             break;
         }
         case 4:
@@ -233,6 +236,7 @@ int main()
                     break;
                 }
             }
+            cout << "###########################################"<<endl;
             break;
         }
         case 5:
@@ -250,6 +254,7 @@ int main()
                     break;
                 }
             }
+            cout << "###########################################"<<endl;
             break;
         }
         case 6:
@@ -258,6 +263,7 @@ int main()
             {
                 delete account;
             }
+            
             accounts.clear();
             break;
         default:
